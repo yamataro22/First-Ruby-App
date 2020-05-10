@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+
+  resources :subjects do
+    member do
+      get :delete
+    end
+  end
+
   root 'home#index'
+
   get 'home/about'
   get 'home/other_index'
   resources :posts

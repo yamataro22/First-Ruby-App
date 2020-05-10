@@ -4,7 +4,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav navbar-right">
         <li><%= link_to 'Strona główna', root_path%></li>
-        <li><%= link_to 'O mnie', {:action => 'about', :firstParam => 20}%></li>
+        <li><%= link_to 'O mnie', {:action => 'about', :controller => :home ,:firstParam => 20}%></li>
     </ul>
   </div>
 </nav>
