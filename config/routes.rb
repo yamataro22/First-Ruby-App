@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'pages/delete'
+  get 'pages/edit'
+  get 'pages/index'
+  get 'pages/new'
+  get 'pages/show'
   resources :subjects do
     member do
       get :delete
