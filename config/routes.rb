@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
 
-  get 'pages/delete'
-  get 'pages/edit'
-  get 'pages/index'
-  get 'pages/new'
-  get 'pages/show'
+  resources :sections do
+    member do
+      get :delete
+    end
+  end
+
   resources :subjects do
+    member do
+      get :delete
+    end
+  end
+
+  resources :pages do 
+    # because resources dont provide delete as default
     member do
       get :delete
     end
